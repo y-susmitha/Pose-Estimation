@@ -1,0 +1,46 @@
+name: Seated Dorsiflexion
+
+exercise_type: lower_body
+
+joint: ankle
+
+side: right
+
+landmarks:
+  knee: 26
+  ankle: 28
+  foot: 32
+
+thresholds:
+  down_angle: 90
+  up_angle: 130
+
+states:
+  DOWN:
+    angle: "<90"
+
+  UP:
+    angle: ">130"
+
+rep:
+  start: DOWN
+  end: UP
+
+feedback:
+  DOWN:
+    message: "Return your foot smoothly"
+
+  UP:
+    message: "Excellent dorsiflexion"
+
+  TOO_FAST:
+    message: "Slow down"
+
+  TOO_SLOW:
+    message: "Move your foot smoothly"
+
+compensation:
+  knee_movement:
+    enabled: true
+    tolerance: 30
+    message: "Keep your knee stable"

@@ -1,0 +1,51 @@
+name: Lunges
+
+exercise_type: lower_body
+
+joint: knee
+
+side: right
+
+landmarks:
+  hip: 24
+  knee: 26
+  ankle: 28
+
+thresholds:
+  down_angle: 90
+  up_angle: 165
+
+states:
+  DOWN:
+    angle: "<90"
+
+  UP:
+    angle: ">165"
+
+rep:
+  start: UP
+  end: DOWN
+
+feedback:
+  UP:
+    message: "Stand upright"
+
+  DOWN:
+    message: "Good lunge position"
+
+  TOO_FAST:
+    message: "Slow down"
+
+  TOO_SLOW:
+    message: "Perform the lunge smoothly"
+
+compensation:
+  knee_alignment:
+    enabled: true
+    tolerance: 40
+    message: "Keep your knee aligned with your ankle"
+
+  trunk_lean:
+    enabled: true
+    tolerance: 50
+    message: "Keep your trunk upright"

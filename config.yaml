@@ -1,0 +1,163 @@
+# ============================================================
+# RehabRanger Global Configuration
+# ============================================================
+
+application:
+
+  name: RehabRanger
+
+  version: "1.0"
+
+  mode: rehabilitation
+
+
+# ============================================================
+# CAMERA CONFIGURATION
+# ============================================================
+
+camera:
+
+  device_id: 0
+
+  width: 1280
+
+  height: 720
+
+  fps: 30
+
+
+# ============================================================
+# POSE DETECTION CONFIGURATION
+# ============================================================
+
+pose:
+
+  model: mediapipe
+
+  detection_confidence: 0.5
+
+  tracking_confidence: 0.5
+
+  visibility_threshold: 0.5
+
+
+# ============================================================
+# EXERCISE CONFIGURATION
+# ============================================================
+
+exercise:
+
+  directory: exercises
+
+  default: side_arm_raise.yaml
+
+
+# ============================================================
+# CALIBRATION CONFIGURATION
+# ============================================================
+
+calibration:
+
+  enabled: true
+
+  sample_count: 30
+
+  minimum_samples: 10
+
+
+# ============================================================
+# REPETITION CONFIGURATION
+# ============================================================
+
+repetition:
+
+  enabled: true
+
+  minimum_rep_interval: 0.5
+
+  smoothing_window: 5
+
+
+# ============================================================
+# FEEDBACK CONFIGURATION
+# ============================================================
+
+feedback:
+
+  enabled: true
+
+  display: true
+
+  voice: false
+
+  duration: 2.0
+
+
+# ============================================================
+# COMPENSATION / FORM CONFIGURATION
+# ============================================================
+
+compensation:
+
+  enabled: true
+
+  trunk_check: true
+
+  knee_alignment_check: true
+
+  tolerance: 40
+
+
+# ============================================================
+# LOGGING CONFIGURATION
+# ============================================================
+
+logging:
+
+  enabled: true
+
+  directory: output
+
+  events_file: events.json
+
+  keypoints_file: keypoints.json
+
+  save_angles: true
+
+  save_feedback: true
+
+  save_compensation: true
+
+
+# ============================================================
+# DISPLAY CONFIGURATION
+# ============================================================
+
+display:
+
+  window_name: RehabRanger
+
+  show_landmarks: true
+
+  show_angles: true
+
+  show_repetitions: true
+
+  show_feedback: true
+
+  show_state: true
+
+
+# ============================================================
+# OUTPUT CONFIGURATION
+# ============================================================
+
+output:
+
+  directory: output
+
+  save_session: true
+
+  save_keypoints: true
+
+  save_events: true

@@ -1,0 +1,48 @@
+[
+    {
+        "timestamp": "2026-08-15T12:14:24.262872",
+        "event_type": "SESSION_START",
+        "message": "Exercise session started",
+        "exercise": "Side Arm Raise",
+        "state": null,
+        "repetitions": null
+    },
+    {
+        "timestamp": "2026-08-15T12:14:24.273922",
+        "joint": "shoulder",
+        "angle": 85.5,
+        "exercise": "Side Arm Raise"
+    },
+    {
+        "timestamp": "2026-08-15T12:14:24.303447",
+        "event_type": "REPETITION",
+        "message": "Repetition completed",
+        "exercise": "Side Arm Raise",
+        "state": null,
+        "repetitions": 1
+    },
+    {
+        "timestamp": "2026-08-15T12:14:24.324028",
+        "event_type": "FEEDBACK",
+        "message": "Excellent",
+        "exercise": "Side Arm Raise",
+        "state": null,
+        "repetitions": null
+    },
+    {
+        "timestamp": "2026-08-15T12:14:24.334947",
+        "event_type": "COMPENSATION",
+        "message": "Avoid leaning your trunk",
+        "exercise": "Side Arm Raise",
+        "state": null,
+        "repetitions": null
+    },
+    {
+        "timestamp": "2026-08-15T12:14:24.381663",
+        "event_type": "SESSION_END",
+        "message": "Exercise session ended",
+        "exercise": "Side Arm Raise",
+        "state": null,
+        "repetitions": 1
+    }
+]

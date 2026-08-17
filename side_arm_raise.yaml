@@ -1,0 +1,46 @@
+name: Side Arm Raise
+
+exercise_type: upper_body
+
+joint: shoulder
+
+side: right
+
+landmarks:
+  shoulder: 12
+  elbow: 14
+  wrist: 16
+
+thresholds:
+  down_angle: 20
+  up_angle: 80
+
+states:
+  DOWN:
+    angle: "<20"
+
+  UP:
+    angle: ">80"
+
+rep:
+  start: DOWN
+  end: UP
+
+feedback:
+  DOWN:
+    message: "Lower your arm completely"
+
+  UP:
+    message: "Excellent arm raise"
+
+  TOO_FAST:
+    message: "Slow down"
+
+  TOO_SLOW:
+    message: "Raise your arm smoothly"
+
+compensation:
+  trunk_lean:
+    enabled: true
+    tolerance: 50
+    message: "Avoid leaning your trunk"
